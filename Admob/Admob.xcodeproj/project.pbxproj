@@ -15,6 +15,7 @@
 		154205D220C48CF5008BD528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154205D120C48CF5008BD528 /* main.m */; };
 		154205DC20C48CF6008BD528 /* AdmobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154205DB20C48CF6008BD528 /* AdmobTests.m */; };
 		154205E720C48CF6008BD528 /* AdmobUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154205E620C48CF6008BD528 /* AdmobUITests.m */; };
+		15F9017320CC16F500102E47 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154205F520C490DF008BD528 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		154205E220C48CF6008BD528 /* AdmobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdmobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		154205E620C48CF6008BD528 /* AdmobUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdmobUITests.m; sourceTree = "<group>"; };
 		154205E820C48CF6008BD528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154205F520C490DF008BD528 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.31.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F9017320CC16F500102E47 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				154205DA20C48CF6008BD528 /* AdmobTests */,
 				154205E520C48CF6008BD528 /* AdmobUITests */,
 				154205C020C48CE7008BD528 /* Products */,
+				154205F420C490DF008BD528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				154205E820C48CF6008BD528 /* Info.plist */,
 			);
 			path = AdmobUITests;
+			sourceTree = "<group>";
+		};
+		154205F420C490DF008BD528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				154205F520C490DF008BD528 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,8 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3AYF457B4;
 				INFOPLIST_FILE = Admob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,8 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3AYF457B4;
 				INFOPLIST_FILE = Admob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
